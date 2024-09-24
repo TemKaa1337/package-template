@@ -44,7 +44,6 @@
         "phpmd": "./vendor/bin/phpmd src/ text phpmd.xml",
         "psalm": "./vendor/bin/psalm -c psalm.xml --no-cache",
         "tests": "./vendor/bin/phpunit -c phpunit.xml",
-        "bench": "./vendor/bin/phpbench run --config=phpbench.json",
         "infection": "./vendor/bin/infection --threads=4",
         "test-all": [
             "composer phpmd",
