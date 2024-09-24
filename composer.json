@@ -51,7 +51,6 @@
             "composer psalm",
             "composer tests",
             "composer infection",
-            "composer bench",
             "composer coverage"
         ]
     }
