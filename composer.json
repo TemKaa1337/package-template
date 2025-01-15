@@ -1,12 +1,16 @@
 {
-    "name": "temkaa/{TEMPLATE}",
-    "description": "{TEMPLATE}",
+    "name": "temkaa/template",
+    "description": "temkaa/template description",
     "type": "library",
     "license": "MIT",
-    "keywords": ["{TEMPLATE}"],
+    "keywords": ["temkaa/template"],
     "autoload": {
         "psr-4": {
-            "Temkaa\\{TEMPLATE}\\": "src/",
+            "Temkaa\\Template\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
             "Tests\\": "tests/"
         }
     },
@@ -20,11 +24,11 @@
         "php": "^8.3"
     },
     "require-dev": {
-        "vimeo/psalm": "^5.26",
         "phpunit/phpunit": "^10.5",
         "phpmd/phpmd": "^2.15",
         "infection/infection": "^0.27.11",
-        "rregeer/phpunit-coverage-check": "^0.3.1"
+        "rregeer/phpunit-coverage-check": "^0.3.1",
+        "phpstan/phpstan": "^2.1"
     },
     "config": {
         "allow-plugins": {
