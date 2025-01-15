@@ -22,13 +22,13 @@ jobs:
               run: composer install --no-progress
 
             - name: Run PHPMD tests
-              run: ./vendor/bin/phpmd src/ text phpmd.xml
+              run: composer phpmd
 
-            - name: Run Psalm tests
-              run: ./vendor/bin/psalm -c psalm.xml
+            - name: Run Phpstan tests
+              run: composer phpstan
 
             - name: Run test suite
-              run: ./vendor/bin/phpunit --testsuite integrations  --coverage-clover clover.xml
+              run: ./vendor/bin/phpunit -c phpunit.xml --coverage-clover clover.xml
               env:
                   XDEBUG_MODE: coverage
 
